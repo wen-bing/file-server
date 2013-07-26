@@ -25,7 +25,7 @@ exports.startup = function(port) {
 
 	http.createServer(function(req, res) {
 		var reqeustPath = global.decodeURIComponent(url.parse(req.url).pathname);
-		var fullPath = __dirname + reqeustPath;
+		var fullPath = path.join(process.cwd(), reqeustPath);
 
 		if(!fs.existsSync(fullPath)){
 			console.log("Request path: " + reqeustPath + " " + 404);
