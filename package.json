@@ -1,20 +1,25 @@
 {
 	"name": "nfileserver",
 	"description": "port python -m SimpleHTTPServer to Node",
-	"version":"1.0.1",
+	"version": "1.0.1",
 	"keywords": ["HTTP Server",
-				"Share File",
-				"SimpleHTTPServer"],
-	 "license" : "MIT",
-	 "author": {
-	 	"name": "Wenbin Ma",
-	 	"email": "mawenb@gmail.com"
-	 },
-	 "bin": {
-	 	"nfileserver":"./bin/nfileserver.js"
-	 },
-	 "dependencies":{
+		"Share File",
+		"SimpleHTTPServer"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Wenbin Ma",
+		"email": "mawenb@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wen-bing/file-server.git"
+	},
+	"bin": {
+		"nfileserver": "./bin/nfileserver.js"
+	},
+	"dependencies": {
 		"commander": "*"
-	 }
+	}
 
 }
